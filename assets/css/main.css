@@ -1,5 +1,5 @@
 /* root all pages */
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,26 +10,25 @@
 }
 
 :root {
-  --color-yellow: #FFB400;
+  --color-yellow: #ffb400;
   --color-yellow-varient: #7a5705;
-  --color-dark: #18191A;
-  --color-green: #7EB942;
+  --color-dark: #18191a;
+  --color-green: #7eb942;
   --color-bg: rgba(36, 37, 38, 0.63);
   --color-white: #fff;
   --color-gray: #767676;
-  --color-dark-varient:#242526
-
+  --color-dark-varient: #242526;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   scrollbar-color: var(--color-green) !important ;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #000000!important;
+  font-family: "Inter", sans-serif;
+  background-color: #000000 !important;
   color: var(--color-white);
 }
 
@@ -58,37 +57,37 @@ p {
 }
 
 /* slider */
-.right-sidebar{
-  background-color: #18191A;
+.right-sidebar {
+  background-color: #18191a;
   max-width: 20%;
   height: 196vh;
 }
 
-.main-content{
-  width: 70%;
+.main-content {
+  max-width: 70%;
   height: 420vh;
 }
 
-.left-sidebar{
-  background-color: #18191A;
-  width: 5%;
+.left-sidebar {
+  background-color: #18191a;
+  min-width: 5%;
   height: 196vh;
 }
 
-@media screen and (max-width:768px) {
-  .right-sidebar{
+@media screen and (max-width: 768px) {
+  .right-sidebar {
     display: none;
   }
-  .left-sidebar{
+  .left-sidebar {
     display: none;
   }
-  .main-content{
-    width: 100%;
+  .main-content {
+    width: 100% !important;
   }
 }
 
 /* profile  */
-.profile-item{
+.profile-item {
   background-color: var(--color-yellow);
   padding: 10px 10px 8px;
   border-radius: 50%;
@@ -100,14 +99,14 @@ p {
   margin: 0px 5px;
 }
 
-.profile-item i{
+.profile-item i {
   color: var(--color-white);
   font-size: 20px;
 }
-.profile-item:hover{
+.profile-item:hover {
   background-color: var(--color-yellow-varient);
 }
-.info-text{
+.info-text {
   background-color: var(--color-yellow);
   padding: 6px 20px;
   font-size: 20px;
@@ -115,62 +114,110 @@ p {
   border-radius: 2px;
 }
 
-.info-text1{
+.info-text1 {
   font-size: 20px;
   color: var(--color-white);
 }
-.success{
-  color: #7EB942;
+.success {
+  color: #7eb942;
 }
 /* progress */
-.progress{
+.progress {
   border: 0.5px solid var(--color-yellow);
   background: var(--color-dark) !important;
   height: 10px !important;
   padding: 3px;
 }
-.progress-item{
-  background: var(--color-yellow)!important;
+.progress-item {
+  background: var(--color-yellow) !important;
 }
 
-.Extra-skills ul li{
+.Extra-skills ul li {
   background-color: var(--color-dark);
 }
 
 /* right side navbar  */
-.nav-manu{
+.nav-manu {
   margin-top: 150px;
 }
 
-.nav-manu ul li{
+.nav-manu ul li {
   padding: 10px 0;
   background-color: var(--color-gray);
   margin-top: 50px;
   border-radius: 50%;
 }
 
-.nav-manu ul li:hover{
+.nav-manu ul li:hover {
   background-color: var(--color-yellow);
 }
-.nav-manu .active{
+.nav-manu .active {
   transition: all 0.4s;
   background-color: var(--color-yellow);
   color: var(--color-dark) !important;
 }
-.nav-manu a, .nav-manu a:focus {
+.nav-manu a,
+.nav-manu a:focus {
   color: var(--color-white);
 }
-.nav-manu a i, .nav-manu a:focus i {
+.nav-manu a i,
+.nav-manu a:focus i {
   font-size: 24px;
 }
-.nav-manu a:hover, .nav-manu .active, .nav-manu .active:focus, .nav-manu li:hover > a {
+.nav-manu a:hover,
+.nav-manu .active,
+.nav-manu .active:focus,
+.nav-manu li:hover > a {
   color: var(--color-dark);
 }
 
 /* hero section */
-.bg-image{
+.bg-image {
   background-image: url("../img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  
+}
+
+@media screen and (max-width: 768px) {
+  #hero-image {
+    display: none;
+  }
+}
+
+section {
+  width: 100%;
+}
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
