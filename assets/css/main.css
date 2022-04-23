@@ -57,18 +57,18 @@ p {
 }
 
 /* slider */
-.left-sidebar {
+/* .left-sidebar {
   background-color: #18191a;
   height: 196vh;
-}
+} */
 
-.main-content {
+/* .main-content {
   height: auto;
-}
+} */
 
-.right-sidebar {
+/* .right-sidebar {
   height: 196vh;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .right-sidebar {
@@ -110,12 +110,9 @@ p {
   border-radius: 2px;
 }
 
-.info-text1 {
-  font-size: 20px;
-  color: var(--color-white);
-}
-.success {
-  color: #7eb942;
+
+.text-successs {
+  color: #7eb942 !important;
 }
 /* progress */
 .progress {
