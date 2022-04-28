@@ -69,7 +69,7 @@ p {
   overflow: hidden;
 }
 .right-sidebar {
-  height: 196vh;
+  height: 170vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -244,4 +244,16 @@ p {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
+}
+
+.inputfiuld{
+  background-color: #767676 !important;
+  width: 100%;
+  /* height: 40px; */
+  color: #fff;
+  padding:10px 20px;
+  border-radius: 5px;
+}
+.inputfiuld:focus{
+  outline: 2px solid var(--color-yellow);
 }
