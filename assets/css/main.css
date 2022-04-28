@@ -193,21 +193,19 @@ p {
 
 
 /* protfolio-nav */
-
-.nav-items,.nav-items a i{
+.nav-items{
   background-color: var(--color-gray);
+}
+.nav-items,.nav-items a i{
   color: var(--color-white);
   transition: all 0.3s ease;
 }
 
-.nav-items:hover{
+.nav-items:hover,
+.active{
   background-color: var(--color-yellow);
   color: var(--color-white);
 }
-
-
-
-
 /* back to top */
 .back-to-top {
   position: fixed;
