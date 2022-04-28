@@ -69,11 +69,6 @@
                     <a href=""><i class="bi bi-youtube"></i></a>
                   </div>
                 </div>
-                <!-- <div class="col-2">
-                    <div class="profile-item">
-                      <a href=""><i class="bi bi-dribbble"></i></a>
-                    </div>
-                  </div> -->
               </div>
               <hr class="text-light my-4" />
             </div>
@@ -224,43 +219,44 @@
       <div class="col-md-8 col-12">
         <!----------------- main-content ------------------->
         <main class="main-content">
+          <!-- navbar hiddend -->
+          <div class="container">
+            <div class="row d-block d-md-none justify-content-center">
+              <div class="col-10">
+                <nav class="navbar bg-dark fixed-top shadow">
+                  <button type="button" class="bg-dark px-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="bi bi-filter-left fs-1 text-light"></i>
+                  </button>
+                  <button type="button" class="bg-dark px-5" data-bs-toggle="modal" data-bs-target="#rightside">
+                    <i class="bi bi-three-dots-vertical fs-1 text-light"></i>
+                  </button>
+                </nav>
+              </div>
+            </div>
+          </div>
+
           <!-- hero section -->
           <section id="hero">
 
             <div class="container">
-              <!-- navbar hiddend -->
-              <div class="row d-block d-md-none">
-                <div class="container">
-                  <div class="col-12 mb-5">
-                    <nav class="navbar bg-dark fixed-top shadow">
-                      <button type="button" class="bg-dark px-5" data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop">
-                        <i class="bi bi-filter-left fs-1 text-light"></i>
-                      </button>
-                      <button type="button" class="bg-dark px-5" data-bs-toggle="modal" data-bs-target="#rightside">
-                        <i class="bi bi-three-dots-vertical fs-1 text-light"></i>
-                      </button>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row bg-image justify-content-center mt-5 mt-md-0">
-                <div class="col-md-6 col-11 text-center text-md-start order-1 py-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="3000">
-                  <h1 class="text-light ">
+              <div class="row bg-image justify-content-center active">
+                <div class="col-md-6 col-4 text-center text-md-start order-1 py-5" data-aos="fade-up"
+                  data-aos-delay="400" data-aos-duration="3000">
+                  <h2 class="text-light">
                     I'm Rayan Adlrdard
                     <span class="text-warning">Front-end</span> Developer
-                  </h1>
-                  <p class="">
+                  </h2>
+                  <p class="d-none d-md-block">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Et, volutpat feugiat placerat lobortis. Natoque rutrum
                     semper sed suspendisse nunc lectus.
                   </p>
-                  <a class="btn btn-warning px-4 fs-5 mt-2" href=""><span class="px-2">HIRE ME</span>
+                  <a class="btn btn-warning px-4 fs-md-5  mt-2" href=""><span class="px-md-2">HIRE ME</span>
                     <i class="bi bi-arrow-right-circle "></i></a>
                 </div>
-                <div class="col-md-4 order-2 d-none d-lg-block align-self-end" data-aos="fade-up" data-aos-delay="500" data-aos-duration="3000">
-                  <img src="./assets/img/Person.png" class="img-fluid" id="hero-image" alt="" />
+                <div class="col-md-4 order-2 d-none d-lg-block align-self-end" data-aos="fade-up" data-aos-delay="500"
+                  data-aos-duration="3000">
+                  <img src="./assets/img/Person.png" class="img-fluid mt-5" id="hero-image" alt="" />
                 </div>
               </div>
             </div>
@@ -272,7 +268,7 @@
               <div class="section-title">
                 <div class="row justify-content-center py-5">
                   <div class="col-12 col-md-8 text-center">
-                    <h1 class="text-light fw-bold">My Services</h1>
+                    <h2 class="text-light fw-bold">My Services</h2>
                     <p>
                       Amet minim mollit non deserunt ullamco est sit aliqua
                       dolor do amet sint. Velit officia consequat duis enim
@@ -284,9 +280,9 @@
 
               <div class="card-section">
                 <div class="row">
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-3 px-2 bg-dark">
+                      <img src="./assets/img/service1.png" class="img-fluid w-50 mx-auto py-3" alt="">
                       <div class="card-body">
                         <h4 class="card-title text-light">web development</h4>
                         <p class="card-text text-muted py-2">
@@ -295,58 +291,59 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-3 px-2 bg-dark">
+                      <img src="./assets/img/service2.png" class="img-fluid w-50 mx-auto py-3" alt="">
                       <div class="card-body">
-                        <h4 class="card-title text-light">web development</h4>
+                        <h4 class="card-title text-light">uI/uX design</h4>
                         <p class="card-text text-muted py-2">
-                          blog, e-commerce
+                          Mobile app, website design
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-3 px-2 bg-dark">
+                      <img src="./assets/img/service4.png" class="img-fluid w-50 mx-auto py-3" alt="">
                       <div class="card-body">
-                        <h4 class="card-title text-light">web development</h4>
+                        <h4 class="card-title text-light">Sound Design</h4>
                         <p class="card-text text-muted py-2">
-                          blog, e-commerce
+                          Voice over ,Beat Making
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-3 px-2 bg-dark">
+                      <img src="./assets/img/service3.png" class="img-fluid w-50 mx-auto py-3" alt="">
                       <div class="card-body">
-                        <h4 class="card-title text-light">web development</h4>
+                        <h4 class="card-title text-light">Game Design</h4>
                         <p class="card-text text-muted py-2">
-                          blog, e-commerce
+                          Character Design, Props & Objects
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-3 px-2 bg-dark">
+                      <img src="./assets/img/service5.png" class="img-fluid w-50 mx-auto py-3" alt="">
                       <div class="card-body">
-                        <h4 class="card-title text-light">web development</h4>
+                        <h4 class="card-title text-light">photography</h4>
                         <p class="card-text text-muted py-2">
-                          blog, e-commerce
+                          portrait, product photography
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-4 col-6 mt-4">
-                    <div class="card text-center bg-dark">
-                      <i class="bi bi-display display-2 text-warning py-2"></i>
+                  <div class="col-lg-4 mt-4">
+                    <div class="card text-center py-4 bg-dark">
                       <div class="card-body">
-                        <h4 class="card-title text-light">web development</h4>
-                        <p class="card-text text-muted py-2">
-                          blog, e-commerce
+                        <h3 class="h5 text-light">Advertising</h3>
+                        <p class="fs-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam
+                          in ac dictum a urna
+                          viverra morbi.
                         </p>
+                        <a href="#" class="link text-warning">ORDER NOW</a>
                       </div>
                     </div>
                   </div>
@@ -360,7 +357,7 @@
               <div class="section-title">
                 <div class="row justify-content-center py-5">
                   <div class="col-12 col-md-8 text-center">
-                    <h1 class="text-light fw-bold">Price plans</h1>
+                    <h2 class="text-light fw-bold">Price plans</h2>
                     <p>
                       Amet minim mollit non deserunt ullamco est sit aliqua
                       dolor do amet sint. Velit officia consequat duis enim
@@ -373,7 +370,8 @@
               <div class="pricing-section">
                 <div class="row justify-content-center">
 
-                  <div class="col-md-4 col-10 col-10 mt-4" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+                  <div class="col-md-4 col-10 col-10 mt-4" data-aos="fade-right" data-aos-delay="200"
+                    data-aos-duration="1000">
                     <div class="card bg-dark">
                       <div class="text-center my-5">
                         <div class="pricing-title text-center text-light py-3">
@@ -562,7 +560,7 @@
               <div class="section-title">
                 <div class="row justify-content-center py-5">
                   <div class="col-12 col-md-8 text-center">
-                    <h1 class="text-light fw-bold">Re-commendations</h1>
+                    <h2 class="text-light fw-bold">Re-commendations</h2>
                     <p>
                       Amet minim mollit non deserunt ullamco est sit aliqua
                       dolor do amet sint. Velit officia consequat duis enim
@@ -682,7 +680,7 @@
             <div class="section-title">
               <div class="row justify-content-center py-5">
                 <div class="col-12 col-md-8 text-center">
-                  <h1 class="text-light fw-bold">Education</h1>
+                  <h2 class="text-light fw-bold">Education</h2>
                   <p>
                     Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor do amet sint. Velit officia consequat duis enim
@@ -753,47 +751,6 @@
                   </p>
                 </div>
               </div>
-              <!--
-                
-              <div class="row justify-content-between">
-                <div class="col-md-4 p-0 p-md-5 py-2">
-                  <h3 class="text-light">University of Toronto</h3>
-                  <p class="mt-5">
-                    Student
-                    <span class="ms-4 bg-warning p-2 text-dark">Jan 1016 - Dec 2021</span>
-                  </p>
-                </div>
-                <div class="col-md-6 p-0 p-md-5 py-4">
-                  <h3 class="text-light">Certificate of web training</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet dapibus nibh ut faucibus nunc, egestas id amet
-                    porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend
-                    sodales posuere fusce tempus etiam et pellentesque.
-                    Molestie risus enim neque eget dui.
-                  </p>
-                </div>
-              </div> -->
-              <!-- <hr class="text-light" />
-              <div class="row justify-content-between">
-                <div class="col-md-4 p-0 p-md-5 py-4">
-                  <h3 class="text-light">University of Toronto</h3>
-                  <p class="mt-5">
-                    Student
-                    <span class="ms-4 bg-warning p-2 text-dark">Jan 1016 - Dec 2021</span>
-                  </p>
-                </div>
-                <div class="col-md-6 p-0 p-md-5 py-4">
-                  <h3 class="text-light">Certificate of web training</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet dapibus nibh ut faucibus nunc, egestas id amet
-                    porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend
-                    sodales posuere fusce tempus etiam et pellentesque.
-                    Molestie risus enim neque eget dui.
-                  </p>
-                </div>
-              </div> -->
             </div>
           </section>
           <!-- Work History -->
@@ -802,7 +759,7 @@
             <div class="section-title">
               <div class="row justify-content-center py-5">
                 <div class="col-12 col-md-8 text-center">
-                  <h1 class="text-light fw-bold">Work History</h1>
+                  <h2 class="text-light fw-bold">Work History</h2>
                   <p>
                     Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor do amet sint. Velit officia consequat duis enim
@@ -872,47 +829,7 @@
                   </p>
                 </div>
               </div>
-              <!--
-                
-              <div class="row justify-content-between">
-                <div class="col-md-4 p-0 p-md-5 py-2">
-                  <h3 class="text-light">University of Toronto</h3>
-                  <p class="mt-5">
-                    Student
-                    <span class="ms-4 bg-warning p-2 text-dark">Jan 1016 - Dec 2021</span>
-                  </p>
-                </div>
-                <div class="col-md-6 p-0 p-md-5 py-4">
-                  <h3 class="text-light">Certificate of web training</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet dapibus nibh ut faucibus nunc, egestas id amet
-                    porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend
-                    sodales posuere fusce tempus etiam et pellentesque.
-                    Molestie risus enim neque eget dui.
-                  </p>
-                </div>
-              </div> -->
-              <!-- <hr class="text-light" />
-              <div class="row justify-content-between">
-                <div class="col-md-4 p-0 p-md-5 py-4">
-                  <h3 class="text-light">University of Toronto</h3>
-                  <p class="mt-5">
-                    Student
-                    <span class="ms-4 bg-warning p-2 text-dark">Jan 1016 - Dec 2021</span>
-                  </p>
-                </div>
-                <div class="col-md-6 p-0 p-md-5 py-4">
-                  <h3 class="text-light">Certificate of web training</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Amet dapibus nibh ut faucibus nunc, egestas id amet
-                    porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend
-                    sodales posuere fusce tempus etiam et pellentesque.
-                    Molestie risus enim neque eget dui.
-                  </p>
-                </div>
-              </div> -->
+
             </div>
           </section>
 
@@ -921,7 +838,7 @@
             <div class="section-title">
               <div class="row justify-content-center py-5">
                 <div class="col-12 col-md-8 text-center">
-                  <h1 class="text-light fw-bold">Portfolio</h1>
+                  <h2 class="text-light fw-bold">Portfolio</h2>
                   <p>
                     Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor do amet sint. Velit officia consequat duis enim
@@ -944,47 +861,47 @@
             </nav>
             <div class="container mt-4">
               <div class="row">
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images UI Logo">
                     <img src="./assets/img/portfolio/port-1.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images Web Logo">
                     <img src="./assets/img/portfolio/port-2.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images UI Web Branding">
                     <img src="./assets/img/portfolio/port-3.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images">
                     <img src="./assets/img/portfolio/port-4.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images UI Branding">
                     <img src="./assets/img/portfolio/port-5.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images Web">
                     <img src="./assets/img/portfolio/port-6.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images Web Logo">
                     <img src="./assets/img/portfolio/port-7.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images UI Branding">
                     <img src="./assets/img/portfolio/port-8.png" class="img-fluid rounded" alt="" />
                   </div>
                 </div>
-                <div class="col-6 col-md-4 my-3">
+                <div class="col-md-4 my-3">
                   <div class="card-images UI Logo Branding">
                     <img src="./assets/img/portfolio/port-9.png" class="img-fluid rounded" alt="" />
                   </div>
@@ -998,7 +915,7 @@
             <div class="section-title">
               <div class="row justify-content-center py-5">
                 <div class="col-12 col-md-8 text-center">
-                  <h1 class="text-light fw-bold">Blog</h1>
+                  <h2 class="text-light fw-bold">Blog</h2>
                   <p>
                     Amet minim mollit non deserunt ullamco est sit aliqua
                     dolor do amet sint. Velit officia consequat duis enim
@@ -1072,7 +989,7 @@
             <div class="container">
               <div class="row justify-content-between">
                 <div class="col-md-8 order-1">
-                  <h1 class="text-light fw-bold py-3 fs-4 text-center text-md-start">Leave us your info</h1>
+                  <h2 class="text-light fw-bold py-3 fs-4 text-center text-md-start">Leave us your info</h2>
                   <form action="" method="post" class="bg-dark px-3 rounded">
                     <div class="firstName py-1">
                       <label class="text-light py-3" for="firstname">Your Full Name (<span class="text-warning">
@@ -1099,84 +1016,84 @@
                     </div>
                   </form>
                 </div>
-                
+
                 <div class="col-md-4 order-2">
-                  <h1 class="text-light fw-bold py-3 fs-4 text-center text-md-start">Contact information</h1>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="card bg-dark p-2">
-                          <div class="card-icon text-center my-2">
-                            <span class="p-3 bg-warning rounded-circle">
-                              <i class="bi fs-3 text-dark bi-map"></i>
-                            </span>
-                          </div>
-                          <div class="card-body px-2">
-                            <p class="text-light fs-5">
-                              <span>Country:</span>
-                              <span class="float-end fs-6 text-muted">Bangladesh</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>City:</span>
-                              <span class="float-end text-muted">Dhaka</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>Streat:</span>
-                              <span class="float-end text-muted">35 vhatara, Badda</span>
-                            </p>
-                          </div>
+                  <h2 class="text-light fw-bold py-3 fs-4 text-center text-md-start">Contact information</h2>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card bg-dark p-2">
+                        <div class="card-icon text-center my-2">
+                          <span class="p-3 bg-warning rounded-circle">
+                            <i class="bi fs-3 text-dark bi-map"></i>
+                          </span>
                         </div>
-                      </div>
-
-
-                      <div class="col-12 mt-3">
-                        <div class="card bg-dark p-2">
-                          <div class="card-icon text-center my-2">
-                            <span class="p-3 bg-warning rounded-circle">
-                              <i class="bi fs-3 text-dark bi-map"></i>
-                            </span>
-                          </div>
-                          <div class="card-body px-2">
-                            <p class="text-light fs-5">
-                              <span>Country:</span>
-                              <span class="float-end fs-6 text-muted">Bangladesh</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>City:</span>
-                              <span class="float-end text-muted">Dhaka</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>Streat:</span>
-                              <span class="float-end text-muted">35 vhatara, Badda</span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-
-                      <div class="col-12 mt-3">
-                        <div class="card bg-dark p-2">
-                          <div class="card-icon text-center my-2">
-                            <span class="p-3 bg-warning rounded-circle">
-                              <i class="bi fs-3 text-dark bi-map"></i>
-                            </span>
-                          </div>
-                          <div class="card-body px-2">
-                            <p class="text-light fs-5">
-                              <span>Country:</span>
-                              <span class="float-end fs-6 text-muted">Bangladesh</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>City:</span>
-                              <span class="float-end text-muted">Dhaka</span>
-                            </p>
-                            <p class="text-light fs-5">
-                              <span>Streat:</span>
-                              <span class="float-end text-muted">35 vhatara, Badda</span>
-                            </p>
-                          </div>
+                        <div class="card-body px-2">
+                          <p class="text-light fs-5">
+                            <span>Country:</span>
+                            <span class="float-end fs-6 text-muted">Bangladesh</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>City:</span>
+                            <span class="float-end text-muted">Dhaka</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>Streat:</span>
+                            <span class="float-end text-muted">35 vhatara, Badda</span>
+                          </p>
                         </div>
                       </div>
                     </div>
+
+
+                    <div class="col-12 mt-3">
+                      <div class="card bg-dark p-2">
+                        <div class="card-icon text-center my-2">
+                          <span class="p-3 bg-warning rounded-circle">
+                            <i class="bi fs-3 text-dark bi-map"></i>
+                          </span>
+                        </div>
+                        <div class="card-body px-2">
+                          <p class="text-light fs-5">
+                            <span>Country:</span>
+                            <span class="float-end fs-6 text-muted">Bangladesh</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>City:</span>
+                            <span class="float-end text-muted">Dhaka</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>Streat:</span>
+                            <span class="float-end text-muted">35 vhatara, Badda</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="col-12 mt-3">
+                      <div class="card bg-dark p-2">
+                        <div class="card-icon text-center my-2">
+                          <span class="p-3 bg-warning rounded-circle">
+                            <i class="bi fs-3 text-dark bi-map"></i>
+                          </span>
+                        </div>
+                        <div class="card-body px-2">
+                          <p class="text-light fs-5">
+                            <span>Country:</span>
+                            <span class="float-end fs-6 text-muted">Bangladesh</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>City:</span>
+                            <span class="float-end text-muted">Dhaka</span>
+                          </p>
+                          <p class="text-light fs-5">
+                            <span>Streat:</span>
+                            <span class="float-end text-muted">35 vhatara, Badda</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1218,17 +1135,20 @@
               <div class="container">
                 <div class="row justify-content-center bg-dark">
                   <div class="col-md-10 p-4">
-                    <h1 class="text-light fs-6">
+                    <h2 class="text-light fs-6">
                       <span class="px-2 fs-4">&copy;</span>
                       <span class="px-2">Masud Pervez</span>
                       <span class="px-2">Powored By:</span>
                       <a href="" class="text-warning">Semicolon IT</a>
-                    </h1>
+                    </h2>
                   </div>
                 </div>
               </div>
             </section>
           </footer>
+
+
+
         </main>
       </div>
       <!-- right site bar -->
@@ -1238,7 +1158,8 @@
           <div class="container text-center p-4">
             <div class="row justify-content-center mb-5">
               <div class="col-md-12">
-                <div class="bg-light text-center p-2 rounded-circle">
+                <div class="bg-light text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="Dark Mode">
                   <i class="bi bi-moon-fill text-dark"></i>
                 </div>
               </div>
@@ -1246,33 +1167,39 @@
 
             <div class="row justify-content-center mt-5">
               <div class="col-md-12 mt-5">
-                <div class="bg-warning text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-house-door-fill text-dark"></i></a>
+                <div class="nav-items active text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="HOME">
+                  <a href="#hero"><i class="bi bi-house-door-fill"></i></a>
                 </div>
               </div>
               <div class="col-md-12 mt-5">
-                <div class="bg-light text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-file-earmark-code-fill text-muted"></i></a>
+                <div class="nav-items text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="service">
+                  <a href="#service"><i class="bi bi-file-earmark-code-fill"></i></a>
                 </div>
               </div>
               <div class="col-md-12 mt-5">
-                <div class="bg-light text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-people-fill text-muted"></i></a>
+                <div class="nav-items text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="Price plans">
+                  <a href="#"><i class="bi bi-people-fill"></i></a>
                 </div>
               </div>
               <div class="col-md-12 mt-5">
-                <div class="bg-light text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-boxes text-muted"></i></a>
+                <div class="nav-items text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="pricing">
+                  <a href="#pricing"><i class="bi bi-boxes"></i></a>
                 </div>
               </div>
               <div class="col-md-12 mt-5">
-                <div class="bg-light text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-brush-fill text-muted"></i></a>
+                <div class="nav-items text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="Portfolio">
+                  <a href="#Portfolio"><i class="bi bi-brush-fill"></i></a>
                 </div>
               </div>
               <div class="col-md-12 mt-5">
-                <div class="bg-light text-center p-2 rounded-circle">
-                  <a href="#"><i class="bi bi-chat-left-fill text-muted"></i></a>
+                <div class="nav-items text-center p-2 rounded-circle" data-toggle="tooltip" data-placement="top"
+                  title="Contact">
+                  <a href="#contact"><i class="bi bi-chat-left-fill"></i></a>
                 </div>
               </div>
             </div>
@@ -1282,6 +1209,9 @@
     </div>
   </div>
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center active">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- left side modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -1333,18 +1263,13 @@
                     <a href=""><i class="bi bi-youtube"></i></a>
                   </div>
                 </div>
-                <!-- <div class="col-2">
-                    <div class="profile-item">
-                      <a href=""><i class="bi bi-dribbble"></i></a>
-                    </div>
-                  </div> -->
               </div>
               <hr class="text-light my-4" />
             </div>
             <!-- information about -->
             <div id="information">
               <div class="row justify-content-between">
-                <div class="col-md-12" >
+                <div class="col-md-12">
                   <span class="info-text">Age :</span>
                   <span class="float-end fs-6 text-light">24</span>
                 </div>

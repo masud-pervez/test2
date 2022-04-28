@@ -65,10 +65,12 @@ p {
 /* .main-content {
   height: auto;
 } */
-
-/* .right-sidebar {
+.navbar{
+  overflow: hidden;
+}
+.right-sidebar {
   height: 196vh;
-} */
+}
 
 @media screen and (max-width: 768px) {
   .right-sidebar {
@@ -116,10 +118,10 @@ p {
 }
 /* progress */
 .progress {
-  border: 0.5px solid var(--color-yellow);
+  border: 0.3px solid var(--color-yellow);
   background: var(--color-dark) !important;
   height: 10px !important;
-  padding: 3px;
+  padding: 2px;
 }
 .progress-item {
   background: var(--color-yellow) !important;
@@ -191,20 +193,45 @@ p {
 
 
 /* protfolio-nav */
-.protfolio-nav ul li{
-  display: inline;
-  padding: 4px 10px;
-}
-.protfolio-nav ul li a{
-  text-decoration: none;
+
+.nav-items,.nav-items a i{
+  background-color: var(--color-gray);
   color: var(--color-white);
-  transition: all 0.4s;
-  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.protfolio-nav a:hover,
-.protfolio-nav .active,
-.protfolio-nav .active:focus,
-.protfolio-nav li:hover > a {
-  color: var(--color-yellow);
+.nav-items:hover{
+  background-color: var(--color-yellow);
+  color: var(--color-white);
+}
+
+
+
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--color-yellow);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: var(--color-yellow-varient);
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
