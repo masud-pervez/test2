@@ -11,7 +11,7 @@
 
 :root {
   --color-yellow: #ffb400;
-  --color-yellow-varient: #7a5705;
+  --color-yellow-varient: #ebab17;
   --color-dark: #18191a;
   --color-green: #7eb942;
   --color-bg: rgba(36, 37, 38, 0.63);
@@ -87,7 +87,7 @@ p {
 /* profile  */
 .profile-item {
   background-color: var(--color-yellow);
-  padding: 10px 10px 8px;
+  padding:8px 12px;
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -98,17 +98,17 @@ p {
 }
 
 .profile-item i {
-  color: var(--color-white);
-  font-size: 20px;
+  color: var(--color-dark-varient);
+  font-size: 18px;
 }
 .profile-item:hover {
   background-color: var(--color-yellow-varient);
 }
 .info-text {
   background-color: var(--color-yellow);
-  padding: 6px 20px;
+  padding: 3px 12px;
   font-size: 20px;
-  color: var(--color-white);
+  color: var(--color-dark);
   border-radius: 2px;
 }
 
@@ -120,8 +120,8 @@ p {
 .progress {
   border: 0.3px solid var(--color-yellow);
   background: var(--color-dark) !important;
-  height: 10px !important;
-  padding: 2px;
+  height: 8px !important;
+  padding: 1px;
 }
 .progress-item {
   background: var(--color-yellow) !important;
@@ -193,12 +193,24 @@ p {
 
 
 /* protfolio-nav */
+.protfolio-nav ul{
+  display: flex;
+}
+.protfolio-nav li a{
+  color: var(--color-white);
+}
+
+
+
+
 .nav-items{
   background-color: var(--color-gray);
+  width: 40px;
 }
 .nav-items,.nav-items a i{
   color: var(--color-white);
   transition: all 0.3s ease;
+  font-size: 18px;
 }
 
 .nav-items:hover,
